@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel='stylesheet' href='style.css'>
+        <script src="script.js"></script>
+        <title>Несколько функций</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <label><p>Найменьший делитель числа <input type="text" id="smallDivNum"></p></label>
+                    <p id="smallDivOut">Результат:</p>
+                    <button onclick="smallestDivisor()">Узнать</button>
+                </td>
+                <td>К примеру найменьший делитель 9 = 3, 13 = 13.</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <label><p>Угол 1 <input type="text" id="angle_one"></p></label>
+                    <label><p>Угол 2 <input type="text" id="angle_two"></p></label>
+                    <p id="diffOut">Результат:</p>
+                    <button onclick="diff()">Узнать</button>
+                </td>
+                <td>Узнайте разницу двух углов, каждый от 0 до 360, и возвращает наименьшую разницу между ними.К примеру (0, 45) = 45, (120, 280) = 160.</td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+                <tr>
+                    <td>
+                        <label><p>Совершенное ли число? <input type="text" id="perfectNum"></p></label>
+                        <p id="perfectOut">Результат:</p>
+                        <button onclick="isPerfect()">Узнать</button>
+                    </td>
+                    <td>Совершенное число — это положительное целое число, равное сумме его положительных делителей (не считая само число). Например, 6 — идеальное число, потому что 6 = 1 + 2 + 3. <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE">Wiki. </a></td>
+                </tr>
+            </table>
+            <hr>
+        <table>
+                <tr>
+                    <td>
+                        <label><p>Форматированное время <input type="text" id="timeNum"></p></label>
+                        <p id="timeOut">Результат:</p>
+                        <button onclick="formattedTime()">Узнать</button>
+                    </td>
+                    <td>Форматированное время принимает на вход количество минут (прошедших с начала суток) и возвращает строку, являющуюся временем в формате чч:мм. К примеру 15 = 00:15, 754 = 12:34.</td>
+                </tr>
+            </table>
+            <hr>
+        <table>
+                <tr>
+                    <td>
+                        <label><p>Счастливый ли билет? <input type="text" id="ticketNum"></p></label>
+                        <p id="ticketOut">Результат:</p>
+                        <button onclick="ticket()">Узнать</button>
+                    </td>
+                    <td>Счастливым билетом называют такой билет с шестизначным номером, где сумма первых трех цифр равна сумме последних трех. Например, билет с номером 385916 - счастливый, так как 3 + 8 + 5 = 9 + 1 + 6.</td>
+                </tr>
+            </table>
+            <hr>    
+        <table>
+                <tr>
+                    <td>
+                        <label><p>Число 1 <input type="text" id="fbNum1"></p></label>
+                        <label><p>Число 2 <input type="text" id="fbNum2"></p></label>
+                        
+                        <button onclick="fizzBuzz()">Узнать</button>
+                    </td>
+                    <td>Напишите два параметра, определяющих начало и конец диапазона (включительно).Если число делится без остатка на 3, то вместо него выводится слово Fizz,
+                        Если число делится без остатка на 5, то вместо него выводится слово Buzz,
+                        Если число делится без остатка и на 3, и на 5, то вместо числа выводится слово FizzBuzz,
+                        В остальных случаях выводится само число</td>
+                </tr>
+                <tr><p id="fbOut">FizzBuzz:</p></tr>
+            </table>
+            <hr>      
+            
+        <table>
+                <tr>
+                    <td>
+                        <label><p>Палиндром ли это? <input type="text" id="palin" style="width:200px;"></p></label>
+                        <p id="palinOut">Результат:</p>
+                        <button onclick="isPalindrome()">Узнать</button>
+                    </td>
+                    <td>Палиндром - это слово или текст, одинаково читающееся в обоих направлениях. Например, число 404 или слово
+                         «топот»</td>
+                </tr>
+        
+        </table>
+            <hr>    
+    </body>
+</html>
